@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Dockerfile build
-        run: terraform --version 
+        run: terraform init && terraform apply --auto-approve
