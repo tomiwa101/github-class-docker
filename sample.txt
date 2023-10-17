@@ -1,0 +1,1 @@
+This file would be viewed from a docker container after being built by github action

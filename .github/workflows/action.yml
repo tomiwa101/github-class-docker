@@ -1,0 +1,14 @@
+name: PUSH TEXT FILE USING DOCKER
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Dockerfile build
+        run: docker build -t testimage .  
